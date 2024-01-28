@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.wrap{
+    width: 1440px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .midel{
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.70);
+            font-family: Actor;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .active{
+            padding: 30px;
+            height: 80px;
+            min-width: 110px;
+            max-width: 170px;
+            background: #EA4737;
+            color: #FFF;
+            text-align: center;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.10);
+            font-family: Rubik;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-right: 20px;
+    }
+}
+.one{
+    .text{
+        position: relative;
+        transform: rotate(180deg);
+        background: #2998E2;
+         width: 35px; 
+         height: 368px;
+    }
+    .text_180{
+        position: absolute;
+        top: 170px;
+        left: -90px;
+        display: flex;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 20px; 
+        color: #fff;
+        transform: rotate(90deg);
+        letter-spacing: 8.55px;
+        font-family: "Abhaya Libre";
+    }
+}
