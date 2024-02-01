@@ -219,6 +219,7 @@ let massive = [{
         "count": 145
     }
 }]
+let span = document.querySelector('h1 span')
 let wrap = document.querySelector('.wrap')
 function show(arr,place) {
     for (let item of arr) {
@@ -285,6 +286,7 @@ function show(arr,place) {
        btn.onclick = () => {
         btn.classList.add('active')
         btn.innerHTML = 'Добавлено'
+        span.innerHTML++
        }
     })
 }
