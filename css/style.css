@@ -4,68 +4,183 @@
     box-sizing: border-box;
 }
 img{
-    max-width: 100%;
+    max-width: 70%;
 }
 .wrap{
-    width: 1440px;
+    padding-inline: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,320px);
+    gap: 40px;
+    width: 1435px;
     margin: 0 auto;
 }
-.header{
+.bag{
+    border: 2px solid black;
+}
+.p{
+    text-align: center;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+}
+.black{
+    background-color: black;
+}
+.p_2{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.56);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 600;
+}
+.flex{
+    margin-inline: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .midel{
-        nav{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        p{
-            color: rgba(0, 0, 0, 0.70);
-            font-family: Actor;
-            font-size: 16px;
-            font-weight: 400;
-        }
-        .active{
-            padding: 30px;
-            height: 80px;
-            min-width: 110px;
-            max-width: 170px;
-            background: #EA4737;
-            color: #FFF;
-            text-align: center;
-            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.10);
-            font-family: Rubik;
-            font-size: 16px;
-            font-weight: 400;
-        }
-    }
-    .right{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-right: 20px;
-    }
 }
-.one{
-    .text{
-        position: relative;
-        transform: rotate(180deg);
-        background: #2998E2;
-         width: 35px; 
-         height: 368px;
+.p_3{
+    color: blue;
+    font-size: 20px;
+}
+.p_4{
+    color: white;
+}
+.flex_2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+    margin: 30px 10px;
+    width: 305px;
+    height: 55px;
+    color: #000;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+.active{
+    border-radius: 10px;
+    border: 1px solid #1F86FF;
+    background: #1F86FF;
+    color: #FFF;
+}
+.img_1{
+    margin-inline:50px ;
+}
+.img_2{
+    max-width: 75%;
+    margin-inline:50px ;
+}
+.img_3{
+    max-width: 90%;
+    margin-inline:20px ;
+}
+.img_4{
+    max-width: 79%;
+    margin-inline:30px ;
+}
+.img_5{
+    max-width: 50%;
+    margin-inline:70px ;
+}
+.img_6{
+    margin-block: 80px;
+    margin-inline:50px ;
+}
+.img_7{
+    max-width: 73.3%;
+    margin-inline:50px ;
+}
+.img_8{
+    max-width: 80%;
+    margin-block:65px;
+    margin-inline:40px ;
+}
+.img_9{
+    margin-block: 10px;
+    margin-inline:50px ;
+}
+.img_10{
+    max-width: 85%;
+    margin-block:65px;
+    margin-inline:25px ;
+}
+.img_11{
+    max-width: 87%;
+    margin-block:65px;
+    margin-inline:20px ;
+}
+.img_12{
+    max-width: 67%;
+    margin-inline: 50px ;
+}
+.img_13{
+    max-width: 80%;
+    margin-block: 60px;
+    margin-inline: 30px ;
+}
+.img_14{
+    max-width: 80%;
+    margin-inline: 30px ;
+    margin-block: 65px ;
+}
+.img_15{
+    max-width: 73%;
+    margin-inline: 50px ;
+}
+.img_16{
+    max-width: 67%;
+    margin-inline: 50px ;
+}
+.img_17{
+    max-width: 73%;
+    margin-inline: 50px ;
+}
+.img_18{
+    margin-block: 15px;
+    max-width: 90%;
+    margin-inline: 20px ;
+}
+.img_19{
+    margin-block: 15px;
+    max-width: 87%;
+    margin-inline: 20px ;
+}
+.img_20{
+    margin-block: 20px;
+    max-width: 100%;
+}
+h1{
+    margin-block: 10px 30px;
+    text-align: center;
+    font-size: 70px;
+}
+.buttons{
+    margin-left:-15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    button{
+        cursor: pointer;
+        border: 2px solid black;
+        font-size: 17px;
+        padding: 20px 20px;
+        background-color: white;
+        border-radius: 12px;
+        width: 250px;
     }
-    .text_180{
-        position: absolute;
-        top: 170px;
-        left: -90px;
-        display: flex;
-        font-size: 19px;
-        font-weight: 700;
-        line-height: 20px; 
-        color: #fff;
-        transform: rotate(90deg);
-        letter-spacing: 8.55px;
-        font-family: "Abhaya Libre";
+    button:hover{
+        background-color: #1F86FF;
+        color: white;
+        box-shadow: 1px 1px 2px rgb(3, 3, 3);
     }
 }
