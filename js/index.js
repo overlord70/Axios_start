@@ -283,11 +283,8 @@ function show(arr,place) {
         btns[prev].classList.add('active')
         btns[prev].innerHTML = 'Добавлено'
        btn.onclick = () => {
-        btns[prev].classList.remove('active')
-        btns[prev].innerHTML = 'В избранное'
         btn.classList.add('active')
         btn.innerHTML = 'Добавлено'
-        prev = idx
        }
     })
 }
