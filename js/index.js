@@ -220,80 +220,82 @@ let massive = [{
     }
 }]
 let wrap = document.querySelector('.wrap')
-for (let item of massive) {
-    //a
-    let div_0 = document.createElement('div')
-    let div_2 = document.createElement('div')
-    let div_3 = document.createElement('div')
-    let div = document.createElement('div')
-    let img = document.createElement('img')
-    let p = document.createElement('p')
-    let p_2 = document.createElement('p')
-    let div_4 = document.createElement('div')
-    let div_5 = document.createElement('div')
-    let div_6 = document.createElement('div')
-    let p_3 = document.createElement('p')
-    let p_4 = document.createElement('p')
-    let p_5 = document.createElement('p')
-    let p_6 = document.createElement('p')
-    let p_7 = document.createElement('p')
-    let p_8 = document.createElement('p')
-    let button = document.createElement('button')
-    //b
-    button.innerHTML = 'В избранное'
-    button.classList.add('btn')
-    div.classList.add('bag')
-    p.innerHTML = item.title
-    p.classList.add('p')
-    img.src = item.image
-    img.classList.add('img_'+item.id)
-    div_2.classList.add('black')
-    p_2.innerHTML = item.description
-    p_2.classList.add('p_2')
-    div_3.classList.add('flex')
-    p_3.innerHTML = '$'
-    p_3.classList.add('p_3')
-    p_4.innerHTML = item.price
-    p_4.classList.add('p_4')
-    div_4.classList.add('flex_2')
-    p_5.innerHTML = '☆'
-    p_5.classList.add('p_3')
-    p_6.innerHTML = item.rating.rate
-    p_6.classList.add('p_4')
-    div_5.classList.add('flex_2')
-    p_7.classList.add('p_3')
-    p_8.classList.add('p_4')
-    p_7.innerHTML = '🟦'
-    p_8.innerHTML = item.rating.count
-    div_6.classList.add('flex_2')
-    //c
-    div.append(img)
-    div_4.append(p_3,p_4)
-    div_5.append(p_5,p_6)
-    div_6.append(p_7,p_8)
-    div_3.append(div_4, div_5, div_6)
-    div_2.append(p,p_2,div_3,button)
-    div_0.append(div,div_2)
-    wrap.append(div_0)
+function show(arr,place) {
+    for (let item of arr) {
+        //a
+        let div_0 = document.createElement('div')
+        let div_2 = document.createElement('div')
+        let div_3 = document.createElement('div')
+        let div = document.createElement('div')
+        let img = document.createElement('img')
+        let p = document.createElement('p')
+        let p_2 = document.createElement('p')
+        let div_4 = document.createElement('div')
+        let div_5 = document.createElement('div')
+        let div_6 = document.createElement('div')
+        let p_3 = document.createElement('p')
+        let p_4 = document.createElement('p')
+        let p_5 = document.createElement('p')
+        let p_6 = document.createElement('p')
+        let p_7 = document.createElement('p')
+        let p_8 = document.createElement('p')
+        let button = document.createElement('button')
+        //b
+        button.innerHTML = 'В избранное'
+        button.classList.add('btn')
+        div.classList.add('bag')
+        p.innerHTML = item.title
+        p.classList.add('p')
+        img.src = item.image
+        img.classList.add('img_'+item.id)
+        div_2.classList.add('black')
+        p_2.innerHTML = item.description
+        p_2.classList.add('p_2')
+        div_3.classList.add('flex')
+        p_3.innerHTML = '$'
+        p_3.classList.add('p_3')
+        p_4.innerHTML = item.price
+        p_4.classList.add('p_4')
+        div_4.classList.add('flex_2')
+        p_5.innerHTML = '☆'
+        p_5.classList.add('p_3')
+        p_6.innerHTML = item.rating.rate
+        p_6.classList.add('p_4')
+        div_5.classList.add('flex_2')
+        p_7.classList.add('p_3')
+        p_8.classList.add('p_4')
+        p_7.innerHTML = '🟦'
+        p_8.innerHTML = item.rating.count
+        div_6.classList.add('flex_2')
+        //c
+        div.append(img)
+        div_4.append(p_3,p_4)
+        div_5.append(p_5,p_6)
+        div_6.append(p_7,p_8)
+        div_3.append(div_4, div_5, div_6)
+        div_2.append(p,p_2,div_3,button)
+        div_0.append(div,div_2)
+        place.append(div_0)
+    }
+    let prev = 1
+    let btns = document.querySelectorAll('.btn')
+    btns.forEach((btn,idx) => {
+        btns[prev].classList.add('active')
+        btns[prev].innerHTML = 'Добавлено'
+       btn.onclick = () => {
+        btns[prev].classList.remove('active')
+        btns[prev].innerHTML = 'В избранное'
+        btn.classList.add('active')
+        btn.innerHTML = 'Добавлено'
+        prev = idx
+       }
+    })
 }
-let prev = 1
-let btns = document.querySelectorAll('.btn')
-btns.forEach((btn,idx) => {
-    btns[prev].classList.add('active')
-    btns[prev].innerHTML = 'Добавлено'
-   btn.onclick = () => {
-    btns[prev].classList.remove('active')
-    btns[prev].innerHTML = 'В избранное'
-    btn.classList.add('active')
-    btn.innerHTML = 'Добавлено'
-    prev = idx
-   }
-})
 let buttons = document.querySelectorAll('.buttons button ')
 buttons.forEach(btn => {
     btn.onclick = () => {
         if(btn.id === 'two'){
-            
+            show(massive,wrap)
         }
     }
 })
