@@ -280,7 +280,7 @@ function show(arr,place) {
     }
     let prev = 1
     let btns = document.querySelectorAll('.btn')
-    btns.forEach((btn,idx) => {
+    btns.forEach(btn => {
         btns[prev].classList.add('active')
         btns[prev].innerHTML = 'Добавлено'
        btn.onclick = () => {
