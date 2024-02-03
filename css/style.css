@@ -199,3 +199,7 @@ img {
     overflow-y: scroll;
     height: 500px;
 }
+.gray{
+    background-color: grey;
+    height: 1;
+}
