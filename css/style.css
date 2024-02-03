@@ -1,186 +1,201 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Inter;
 }
-img{
-    max-width: 70%;
+
+img {
+    max-width: 100%;
 }
-.wrap{
-    padding-inline: 10px;
-    display: grid;
-    grid-template-columns: repeat(4,320px);
-    gap: 40px;
-    width: 1435px;
+
+
+.wrap {
+    text-align: center;
+}
+
+.h1 {
+  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.buttons {
+    button {
+        cursor: pointer;
+        width: 200px;
+        padding-block: 10px;
+        background: 0;
+        border: 2px solid #000;
+        border-radius: 7px;
+        font-weight: 600;
+        transition: .3s ease;
+    }
+
+    button:hover {
+        background-color: #00000014;
+    }
+}
+
+.slots {
+    width: 70%;
     margin: 0 auto;
+    margin-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+    gap: 15px;
 }
-.bag{
-    border: 2px solid black;
-}
-.p{
-    text-align: center;
-    color: #FFF;
-    font-family: Gilroy;
-    font-size: 24px;
-    font-weight: 600;
-}
-.black{
-    background-color: black;
-}
-.p_2{
-    text-align: center;
-    color: rgba(255, 255, 255, 0.56);
-    font-family: Gilroy;
-    font-size: 14px;
-    font-weight: 600;
-}
-.flex{
-    margin-inline: 70px;
+
+.slot {
+    border: 1px solid #000;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.p_3{
-    color: blue;
-    font-size: 20px;
-}
-.p_4{
-    color: white;
-}
-.flex_2{
+
+
+.photo {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    padding-block: 20px;
+    width: 100px;
+    img{
+        object-fit: contain;
+    }
 }
-.btn{
-    margin: 30px 10px;
-    width: 305px;
+
+.descr {
+    background-color: black;
+    color: #fff;
+    padding-block: 30px;
+    padding-inline: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+}
+
+.slot-name {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.descr-p {
+    color: rgba(255, 255, 255, 0.56);
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 70px;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+
+.descr-p::-webkit-scrollbar {
+    display: none;
+  }
+
+.icons {
+    display: flex;
+    gap: 25px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 30px;
+    div{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+}
+
+.to-star {
+    cursor: pointer;
+    width: 100%;
     height: 55px;
+    
     color: #000;
     text-align: center;
     font-family: Gilroy;
     font-size: 18px;
+    font-style: normal;
     font-weight: 600;
-    border-radius: 10px;
+    line-height: normal;
     border: 1px solid #000;
-    background: #FFF;
+    transition: .3s ease;
+    border-radius: 15px;
 }
-.active{
-    border-radius: 10px;
-    border: 1px solid #1F86FF;
-    background: #1F86FF;
-    color: #FFF;
+
+.to-star:hover {
+    background-color: #ffffffc0;
 }
-.img_1{
-    margin-inline:50px ;
+
+.to-star_active {
+    background-color: rgb(31, 134, 255);
+    color: white;
 }
-.img_2{
-    max-width: 75%;
-    margin-inline:50px ;
+.module_korzinka{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: .5s ease-in;
+    h1{
+        text-align: center;
+    }
 }
-.img_3{
-    max-width: 90%;
-    margin-inline:20px ;
+.open{
+    right: 0;
 }
-.img_4{
-    max-width: 79%;
-    margin-inline:30px ;
+.cancel{
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: none;
 }
-.img_5{
-    max-width: 50%;
-    margin-inline:70px ;
-}
-.img_6{
-    margin-block: 80px;
-    margin-inline:50px ;
-}
-.img_7{
-    max-width: 73.3%;
-    margin-inline:50px ;
-}
-.img_8{
-    max-width: 80%;
-    margin-block:65px;
-    margin-inline:40px ;
-}
-.img_9{
-    margin-block: 10px;
-    margin-inline:50px ;
-}
-.img_10{
-    max-width: 85%;
-    margin-block:65px;
-    margin-inline:25px ;
-}
-.img_11{
-    max-width: 87%;
-    margin-block:65px;
-    margin-inline:20px ;
-}
-.img_12{
-    max-width: 67%;
-    margin-inline: 50px ;
-}
-.img_13{
-    max-width: 80%;
-    margin-block: 60px;
-    margin-inline: 30px ;
-}
-.img_14{
-    max-width: 80%;
-    margin-inline: 30px ;
-    margin-block: 65px ;
-}
-.img_15{
-    max-width: 73%;
-    margin-inline: 50px ;
-}
-.img_16{
-    max-width: 67%;
-    margin-inline: 50px ;
-}
-.img_17{
-    max-width: 73%;
-    margin-inline: 50px ;
-}
-.img_18{
-    margin-block: 15px;
-    max-width: 90%;
-    margin-inline: 20px ;
-}
-.img_19{
-    margin-block: 15px;
-    max-width: 87%;
-    margin-inline: 20px ;
-}
-.img_20{
-    margin-block: 20px;
-    max-width: 100%;
-}
-h1{
-    margin-block: 10px 30px;
-    text-align: center;
-    font-size: 70px;
-}
-.buttons{
-    margin-left:-15px ;
+.flex{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 50px;
-    button{
-        cursor: pointer;
-        border: 2px solid black;
-        font-size: 17px;
-        padding: 20px 20px;
-        background-color: white;
-        border-radius: 12px;
-        width: 250px;
-    }
-    button:hover{
-        background-color: #1F86FF;
-        color: white;
-        box-shadow: 1px 1px 2px rgb(3, 3, 3);
-    }
+    gap: 30px;
+    margin-block:20px ;
+}
+.small{
+    max-width: 20%;
+}
+.flex_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pointer{
+    cursor: pointer;
+    font-size: 20px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.kimchi{
+    overflow-y: scroll;
+    height: 500px;
 }
