@@ -9,15 +9,14 @@ img {
     max-width: 100%;
 }
 
-
 .wrap {
     text-align: center;
 }
 
 .h1 {
-  margin-bottom: 20px;
-  font-size: 34px;
-  font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 500;
 }
 
 .buttons {
@@ -29,7 +28,7 @@ img {
         border: 2px solid #000;
         border-radius: 7px;
         font-weight: 600;
-        transition: .3s ease;
+        transition: 0.3s ease;
     }
 
     button:hover {
@@ -39,10 +38,9 @@ img {
 
 .slots {
     width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
+    margin: 50px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 15px;
 }
 
@@ -55,14 +53,13 @@ img {
     align-items: center;
 }
 
-
 .photo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-block: 20px;
     width: 100px;
-    img{
+    img {
         object-fit: contain;
     }
 }
@@ -102,7 +99,7 @@ img {
 
 .descr-p::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .icons {
     display: flex;
@@ -114,7 +111,7 @@ img {
     font-weight: 500;
     line-height: normal;
     margin-bottom: 30px;
-    div{
+    div {
         display: flex;
         flex-wrap: nowrap;
         gap: 5px;
@@ -125,7 +122,7 @@ img {
     cursor: pointer;
     width: 100%;
     height: 55px;
-    
+
     color: #000;
     text-align: center;
     font-family: Gilroy;
@@ -134,7 +131,7 @@ img {
     font-weight: 600;
     line-height: normal;
     border: 1px solid #000;
-    transition: .3s ease;
+    transition: 0.3s ease;
     border-radius: 15px;
 }
 
@@ -146,7 +143,7 @@ img {
     background-color: rgb(31, 134, 255);
     color: white;
 }
-.module_korzinka{
+.module_korzinka {
     padding-bottom: 50px;
     position: fixed;
     top: 0;
@@ -155,15 +152,15 @@ img {
     width: 35%;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    transition: .5s ease-in;
-    h1{
+    transition: 0.5s ease-in;
+    h1 {
         text-align: center;
     }
 }
-.open{
+.open {
     right: 0;
 }
-.cancel{
+.cancel {
     position: absolute;
     top: 0;
     right: -25px;
@@ -174,25 +171,25 @@ img {
     color: #ffffff;
     background-color: none;
 }
-.flex{
+.flex {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-block:20px ;
+    margin-block: 20px;
 }
-.small{
+.small {
     max-width: 20%;
 }
-.flex_2{
+.flex_2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.pointer{
+.pointer {
     cursor: pointer;
     font-size: 20px;
 }
-.grid{
+.grid {
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(3,1fr);
@@ -201,21 +198,21 @@ img {
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 12px;
-    p{
+    p {
         color: #b4b1b1;
         font-size: 25px;
     }
-    p:hover{
+    p:hover {
         font-size: 30px;
         font-weight: 600;
         color: #FFF;
     }
 }
-.kimchi{
+.kimchi {
     overflow-y: scroll;
     height: 595px;
 }
-.gray{
+.gray {
     padding: 10px 20px;
     color: black;
     margin: 20px auto;
@@ -223,32 +220,32 @@ img {
     border-radius: 12px;
     height: 15%;
     width: 70%;
-    .money{
-        h4{
-            margin-bottom:10px ;
+    .money {
+        h4 {
+            margin-bottom: 10px;
         }
     }
 }
-.count{
+.count {
     font-size: 35px;
     margin-left: 37px;
 }
-.hr{
+.hr {
     box-shadow: 1px 4px 2px black;
 }
-.btns{
+.btns {
     margin: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    button{
+    button {
         color: #FFF;
         padding: 7px 10px;
         background-color: blue;
         border: 0;
         cursor: pointer;
     }
-    button:hover{
+    button:hover {
         font-size: 15px;
         box-shadow: 5px 5px 5px black;
         height: 50px;
@@ -257,9 +254,9 @@ img {
     }
 }
 
-.module_korzinka::-webkit-scrollbar{
+.module_korzinka::-webkit-scrollbar {
     display: none;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
