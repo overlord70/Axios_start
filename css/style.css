@@ -147,13 +147,14 @@ img {
     color: white;
 }
 .module_korzinka{
+    padding-bottom: 50px;
     position: fixed;
     top: 0;
     right: -100%;
     bottom: 0;
     width: 35%;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
     transition: .5s ease-in;
     h1{
         text-align: center;
@@ -193,13 +194,68 @@ img {
 }
 .grid{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(120, 120, 120);
+    margin-right: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 12px;
+    p{
+        color: #b4b1b1;
+        font-size: 25px;
+    }
+    p:hover{
+        font-size: 30px;
+        font-weight: 600;
+        color: #FFF;
+    }
 }
 .kimchi{
     overflow-y: scroll;
-    height: 500px;
+    height: 595px;
 }
 .gray{
-    background-color: grey;
-    height: 1;
+    padding: 10px 20px;
+    color: black;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 15%;
+    width: 70%;
+    .money{
+        h4{
+            margin-bottom:10px ;
+        }
+    }
+}
+.count{
+    font-size: 35px;
+    margin-left: 37px;
+}
+.hr{
+    box-shadow: 1px 4px 2px black;
+}
+.btns{
+    margin: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        color: #FFF;
+        padding: 7px 10px;
+        background-color: blue;
+        border: 0;
+        cursor: pointer;
+    }
+    button:hover{
+        font-size: 15px;
+        box-shadow: 5px 5px 5px black;
+        height: 50px;
+        width: 100px;
+        transition: 0.5s ease;
+    }
+}
+.ps{
+    color: aqua;
 }

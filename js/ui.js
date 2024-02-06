@@ -2,6 +2,8 @@
 
 export function reloadSlots(arr, place,module) {
     place.innerHTML = ''
+    let h4_span = document.querySelector('.money h4 span')
+    let span = document.querySelector('#overall')
     for (let item of arr) {
         let slot = document.createElement('div')
 
@@ -57,9 +59,7 @@ export function reloadSlots(arr, place,module) {
             let numView = document.querySelector('#in_pocket')
             let num = +numView.innerText
             if(!button.classList.contains('to-star_active')) {
-                button.innerHTML = 'Добавлено'
-                button.classList.add('to-star_active')
-                numView.innerHTML = num + 1
+                h4_span.innerHTML++
                 //a
             let div = document.createElement('div')
             let p = document.createElement('p')
@@ -73,7 +73,10 @@ export function reloadSlots(arr, place,module) {
             let p_4 = document.createElement('p')
             let p_5 = document.createElement('p')
             let div_6 = document.createElement('div')
+            let hr = document.createElement('hr')
+            let div_7 = document.createElement('div')
             //b
+            hr.classList.add('hr')
             p_4.innerHTML = 'x'
             p_2.innerHTML = '-'
             div_5.classList.add('grid')
@@ -86,27 +89,36 @@ export function reloadSlots(arr, place,module) {
             p.innerHTML = `${item.category}`
             div_2.classList.add('small')
             p_5.innerHTML = `${item.price}`
+            p_5.classList.add('ps')
              div_2.src = `${item.image}`
              p_4.classList.add('pointer')
-             count.innerHTML = nmu
+             count.innerHTML = 1
+             count.classList.add('count')
              // c
              p_2.onclick = () => {
-                 count.innerHTML = nmu -= 1
-                 p_5.innerHTML /= 2 
-                 if(count.innerHTML < 0){
-                     count.innerHTML = 0
+                count.innerHTML = +count.innerHTML - 1
+                 p_5.innerHTML -= `${item.price}`
+                 if(count.innerHTML <= 0){
+                    hr.remove()
+                    div.remove()
+                    button.innerHTML = 'В избранное'
+                    button.classList.remove('to-star_active')
+                    +numView.innerHTML--
+                    h4_span.innerHTML--
                  }
             }
+            let cost = +p_5.innerText
              p_3.onclick = () => {
                 count.innerHTML = nmu += 1
-                 p_5.innerHTML *= 2 
-
+                p_5.innerHTML = cost * count.innerHTML
              }
              p_4.onclick = () => {
+                hr.remove()
                 div.remove()
                 button.innerHTML = 'В избранное'
                 button.classList.remove('to-star_active')
-                numView.innerHTML = num - 1
+                numView.innerHTML--
+                h4_span.innerHTML--
              }
              // d
              div_6.append(p,p_5)
@@ -114,12 +126,14 @@ export function reloadSlots(arr, place,module) {
              div_5.append(p_2,p_3,p_4)
              div_3.append(count,div_5)
              div.append(div_4, div_3)
-             module.append(div)
-            } else {
-                button.innerHTML = 'В избранное'
-                button.classList.remove('to-star_active')
-                numView.innerHTML = num - 1
-            }
+             div_7.append(div)
+             module.append(div_7,hr)
+             // e
+             button.innerHTML = 'Добавлено'
+             button.classList.add('to-star_active')
+             +numView.innerHTML++
+            span.innerHTML = p_5.innerHTML 
+            } 
         }
     }
 }
