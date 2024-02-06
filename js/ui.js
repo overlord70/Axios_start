@@ -132,7 +132,7 @@ export function reloadSlots(arr, place,module) {
              button.innerHTML = 'Добавлено'
              button.classList.add('to-star_active')
              +numView.innerHTML++
-            span.innerHTML = p_5.innerHTML 
+            span.innerHTML = p_5.innerHTML
             } 
         }
     }
