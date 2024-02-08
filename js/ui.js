@@ -8,7 +8,9 @@ export function creator (place_in_innerHTML, place, nums, input, button){
             let hours = data.getHours()
             let minutes = data.getMinutes()
             item.Time = hours + ':' + minutes
+            item.Achived = false
             button.onclick = () => {
+                input.value = ''
                 // a
                 let div_1 = document.createElement('div')
                 let div_2 = document.createElement('div')
@@ -30,6 +32,12 @@ export function creator (place_in_innerHTML, place, nums, input, button){
                 div_2.append(h4, img)
                 div_1.append(div_2, div_3)
                 place_in_innerHTML.append(div_1)
+                // d
+                img.onclick = () => {
+                    item.Achived = true
+                    div_1.remove()
+                    console.log(obj);
+                }
             }
         }
     }
