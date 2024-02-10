@@ -38,6 +38,11 @@ export function creator (place_in_innerHTML, place, nums, input, button){
                     div_1.remove()
                     console.log(obj);
                 }
+                div_1.ondblclick = () => {
+                 let one = prompt('Do you want to change something?')
+                    h4.innerHTML = one
+                    item.Title = one
+                }
             }
         }
     }
