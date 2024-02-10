@@ -36,7 +36,9 @@ export function creator (place_in_innerHTML, place, nums, input, button){
                 img.onclick = () => {
                     item.Achived = true
                     div_1.remove()
-                    console.log(obj);
+                    if (item.Achived === true) {
+                        alert(`Done the acivment (${item.Title.toUpperCase()})`)
+                    }
                 }
             }
         }
