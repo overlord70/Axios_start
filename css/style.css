@@ -10,6 +10,9 @@ img{
     width: 1200px;
     margin: 20px auto;
 }
+input{
+    border: 1px solid black;
+}
 .flex{
     display: flex;
     flex-direction: column;
