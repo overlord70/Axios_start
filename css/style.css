@@ -1,36 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-img{
+img {
     max-width: 100%;
 }
-.wrap{
+.wrap {
     width: 1200px;
     margin: 20px auto;
 }
-input{
+input {
     border: 1px solid black;
 }
-.flex{
+.flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.list{
+.list {
     font-size: 35px;
     text-align: center;
 }
-.typing_place{
+.typing_place {
     margin-block: 10px 40px;
     width: 370px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.text_for_scajule{
+.text_for_scajule {
     padding-inline: 15px;
     width: 70%;
     height: 30px;
@@ -38,7 +38,7 @@ input{
     font-size: 13px;
     font-weight: 600;
 }
-.btn{
+.btn {
     height: 30px;
     border-radius: 10px;
     width: 100px;
@@ -47,18 +47,18 @@ input{
     cursor: pointer;
     border: 1px solid rgb(0, 110, 255);
 }
-.line{
+.line {
     width: 1008px;
     height: 1px;
     background-color: gray;
 }
-.blocks{
+.blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     margin-top: 20px;
 }
-.block{
+.block {
     margin: 0 auto;
     border: 2px solid rgb(0, 145, 255);
     padding: 10px 15px;
@@ -71,11 +71,11 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+    img {
         max-width: 10%;
     }
 }
-.end{
+.end {
     display: flex;
     justify-content: space-between;
     align-items: center;
