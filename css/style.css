@@ -81,3 +81,7 @@ input {
     align-items: center;
     color: rgb(87, 87, 87);
 }
+.tick{
+    text-decoration: underline;
+    transition: 0.5 ease;
+}

@@ -43,6 +43,16 @@ export function creator (place_in_innerHTML, place, nums, input, button){
                     h4.innerHTML = one
                     item.Title = one
                 }
+                h4.onclick = () => {
+                    // 1
+                    // if (h4.style.textDecoration !== 'underline') {
+                    //     h4.style.textDecoration = 'underline'
+                    // } else {
+                    //     h4.style.textDecoration = 'none'
+                    // }
+                    // 2
+                    h4.classList.toggle('tick')
+                }
             }
         }
     }
