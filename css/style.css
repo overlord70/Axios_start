@@ -82,6 +82,6 @@ input {
     color: rgb(87, 87, 87);
 }
 .tick{
-    text-decoration: underline;
+    text-decoration: line-through red;
     transition: 0.5 ease;
 }
