@@ -85,3 +85,38 @@ input {
     text-decoration: line-through red;
     transition: 0.5 ease;
 }
+.flex_0{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+dialog{
+    box-shadow: 15px 15px 50px black;
+    padding: 10px 20px;
+    height: 300px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+.form{
+    .inp{
+        padding-inline: 15px;
+    width: 270px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    }
+    .button{
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 10px;
+        width: 100px;
+        background-color: rgb(0, 110, 255);
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid rgb(0, 110, 255);
+    }
+}

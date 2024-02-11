@@ -1,5 +1,5 @@
 import { numbers , obj } from "./db.js";
-export function creator (place_in_innerHTML, place, nums, input, button){
+export function creator (place_in_innerHTML, place, nums, input, button, module, img_close, dia_inp, dia_btn){
     for (const item of place) {
         input.onkeyup = () => {
             item.Title = input.value
@@ -39,19 +39,19 @@ export function creator (place_in_innerHTML, place, nums, input, button){
                     console.log(obj);
                 }
                 div_1.ondblclick = () => {
-                 let one = prompt('Do you want to change something?')
-                    h4.innerHTML = one
-                    item.Title = one
+                 module.showModal()
+                 dia_inp.value = h4.innerHTML
                 }
                 h4.onclick = () => {
-                    // 1
-                    // if (h4.style.textDecoration !== 'underline') {
-                    //     h4.style.textDecoration = 'underline'
-                    // } else {
-                    //     h4.style.textDecoration = 'none'
-                    // }
-                    // 2
                     h4.classList.toggle('tick')
+                }
+                img_close.onclick = () => {
+                    module.close()
+                }
+                dia_btn.onclick = (e) => {
+                    h4.innerHTML = dia_inp.value
+                    e.preventDefault()
+                    module.close()
                 }
             }
         }
