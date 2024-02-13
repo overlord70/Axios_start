@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <section class="one">
-            <div class="wrap">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="one">
+        <div class="wrap">
+            <h1>ДОБАВЛЕНИЕ, ИЗМЕНЕНИЕ И УДАЛЕНИЕ ЭЛЕМЕНТА ИЗ ТАБЛИЦЫ</h1>
+            <form name="Take_information">
                 <div class="flex">
-                    <h1 class="list">Todo List</h1>
-                    <div class="typing_place">
-                        <input type="text" class="text_for_scajule">
-                        <button class="btn">Add</button>
+                    <div>
+                        <p class="name">Имя</p>
+                        <input name="name" placeholder="Bruce Reyes" id="name" type="text">
                     </div>
-                    <div class="line"></div>
-                </div>
-                <div class="blocks">
-                </div>
-                <dialog>
-                    <div class="flex_0">
-                        <h2>Do you need to change something?</h2>
-                    <img style="max-width: 10%;" src="./img/cancel-deny-games-remove-x-mark-svgrepo-com (1).svg" alt="">
+                    <div>
+                        <p class="age">Возраст</p>
+                        <input name="age" placeholder="24" id="age" type="text">
                     </div>
-                    <form class="form">
-                        <input type="text" class="inp">
-                        <button  class="button">Rename</button>
-                    </form>
-                </dialog>
-            </div>
-        </section>
-        <script type="module" src="js/index.js"></script>
-    </body>
+                    <button id="btn_one">Показать</button>
+                </div>
+            </form>
+                <table>
+                    <tr>
+                        <td>
+                            <p>No</p>
+                        </td>
+                        <td>
+                            Имя студента
+                        </td>
+                        <td>
+                            Год рождения
+                        </td>
+                        <td>
+                            Действия
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </section>
+    <dialog>
+        <div class="flex_0">
+            <h2>Do you want to change something?</h2>
+            <button class="btn">x</button>
+        </div>
+        <form name="replacer">
+            <input name="name_2" type="text">
+            <input name="age_2" type="text">
+            <button id="btn_two">Показать</button>
+        </form>
+    </dialog>
+    <script type="module" src="js/index.js"></script>
+</body>
 </html>

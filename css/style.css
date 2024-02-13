@@ -4,119 +4,86 @@
     box-sizing: border-box;
 }
 img {
-    max-width: 100%;
+    max-width: 15%;
 }
 .wrap {
+    position: relative;
     width: 1200px;
     margin: 20px auto;
 }
-input {
-    border: 1px solid black;
+h1{
+    font-size: 30px;
+    margin-bottom: 30px;
 }
-.flex {
+.flex{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
     align-items: center;
 }
-.list {
-    font-size: 35px;
-    text-align: center;
-}
-.typing_place {
-    margin-block: 10px 40px;
-    width: 370px;
+.flex_0 {
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
     align-items: center;
 }
-.text_for_scajule {
-    padding-inline: 15px;
-    width: 70%;
-    height: 30px;
-    border-radius: 7px;
+#name , #age{
     font-size: 13px;
     font-weight: 600;
-}
-.btn {
+    padding-inline: 15px;
+    width: 250px;
     height: 30px;
-    border-radius: 10px;
-    width: 100px;
-    background-color: rgb(0, 110, 255);
-    color: #fff;
+}
+.name, .age{
+    font-size: 17px;
+    font-weight: 600;
+}
+#btn_one{
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 255, 0.859);
+    color: white;
     cursor: pointer;
-    border: 1px solid rgb(0, 110, 255);
+    border: 0;
+    border-radius: 12px;
+    width: 100px;
+    height: 45px;
 }
-.line {
-    width: 90%;
-    height: 1px;
-    background-color: gray;
+#btn_two{
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: rgba(0, 0, 255, 0.859);
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 12px;
+    height: 25px;
+    width: 70px;
 }
-.blocks {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 30px;
-    margin-top: 20px;
-}
-.block {
-    margin: 0 auto;
-    border: 2px solid rgb(0, 145, 255);
-    padding: 10px 15px;
-    width: 350px;
-    height: 90px;
-    background-color: rgb(235, 235, 235);
-    border-radius: 9px;
-}
-.start {
+table{
+    margin-top: 50px;
+    width: 85%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    img {
-        max-width: 10%;
+    flex-direction: column;
+    
+    tr{
+        font-size: 17px;
+        font-weight: 600;
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
     }
 }
-.end {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(87, 87, 87);
-}
-.tick{
-    text-decoration: line-through red;
-    transition: 0.5 ease;
-}
-.flex_0{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.btn{
+    width: 20px;
+    height: 20px;
 }
 dialog{
-    box-shadow: 15px 15px 50px black;
     padding: 10px 20px;
-    height: 300px;
+    height: 100px;
     width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-}
-.form{
-    .inp{
-        padding-inline: 15px;
-    width: 270px;
-    height: 30px;
-    border-radius: 7px;
-    font-size: 13px;
-    font-weight: 600;
-    }
-    .button{
-        margin-top: 20px;
-        height: 30px;
-        border-radius: 10px;
-        width: 100px;
-        background-color: rgb(0, 110, 255);
-        color: #fff;
-        cursor: pointer;
-        border: 1px solid rgb(0, 110, 255);
-    }
 }
