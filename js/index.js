@@ -66,8 +66,12 @@ function reload(arr, place) {
         }
         form_2.onsubmit = (e) => {
             e.preventDefault()
-           td_2.innerHTML = new FormData(form_2).get('name_2')
-            td_3.innerHTML = new Date().getFullYear() - new FormData(form_2).get('age_2')
+            if(item.id === item.id){
+
+                td_2.innerHTML = new FormData(form_2).get('name_2')
+                 td_3.innerHTML = new Date().getFullYear() - new FormData(form_2).get('age_2')
+                 dialog.close()
+            }
         }
     }
 }
