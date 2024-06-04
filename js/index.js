@@ -1,8 +1,13 @@
 const form = document.forms.Take_information
+
 let table = document.querySelector('table')
+
 let dialog = document.querySelector('dialog')
+
 let btn = document.querySelector('.btn')
+
 let form_2 = document.forms.replacer
+
 let arr_1 = [
     {
         number:  0,
@@ -11,6 +16,7 @@ let arr_1 = [
         id: 0,
     }
 ]
+
 form.onsubmit = (e) => {
     e.preventDefault()
   arr_1.filter(item => {
@@ -19,7 +25,9 @@ form.onsubmit = (e) => {
     } else {
         item.number++
           item.name = new FormData(form).get('name')
+        
         item.age = new Date().getFullYear() - new FormData(form).get('age')
+        
         item.id = Math.random()
     }
   })
